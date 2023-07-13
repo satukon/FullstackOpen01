@@ -31,7 +31,7 @@ const App = () => {
   ]
    
   const [selected, setSelected] = useState(0);
-  const votesArray = [...anecdotes].fill(0);
+  const votesArray = Array(anecdotes.length).fill(0);
   const [votes, setVotes] = useState(votesArray);
 
   const showNextAnectode = () => {
